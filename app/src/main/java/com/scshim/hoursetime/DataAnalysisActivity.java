@@ -2,17 +2,12 @@ package com.scshim.hoursetime;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 
-public class WorkAddActivity extends AppCompatActivity {
+public class DataAnalysisActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_work_add);
-    }
-
-    void workAdd(View view){
-        finish();
+        setContentView(R.layout.activity_data_analysis);
     }
 }

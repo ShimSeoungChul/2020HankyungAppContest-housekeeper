@@ -2,9 +2,7 @@ package com.scshim.hoursetime;
 
 
 /*
-개발자
-
-
+개발자 심승철, 임슬아
  */
 
 /*
@@ -13,6 +11,8 @@ package com.scshim.hoursetime;
 <a href="https://www.flaticon.com/kr/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/kr/" title="Flaticon"> www.flaticon.com</a>
 <a href="https://creativemarket.com/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/kr/" title="Flaticon"> www.flaticon.com</a>
  */
+
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -27,7 +27,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    void workAdd(View view){
+    void goToworkAdd(View view){
+        Intent intent = new Intent(getApplicationContext(),WorkAddActivity.class);
+        startActivity(intent);//액티비티 띄우기
+    }
 
+    void goTodataAnalysis(View view){
+        Intent intent = new Intent(getApplicationContext(),DataAnalysisActivity.class);
+        startActivity(intent);//액티비티 띄우기
     }
 }

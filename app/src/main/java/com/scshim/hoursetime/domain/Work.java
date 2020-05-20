@@ -1,7 +1,11 @@
 package com.scshim.hoursetime.domain;
 
+import java.util.List;
+
 /* 작업 정보 테이블 */
 public class Work {
+    //작업 번호
+    int id;
     //시작 시간
     int startMonth;
     int startDay;
@@ -25,7 +29,6 @@ public class Work {
     String worker명 = "";
     //작업 만족도. 1부터 5까지로 선택하며, 선택 값을 화면에 별로 표기한다.
     int start = 0;
-
 
     public Work(int startMonth, int startDay, int startHour, int startMinute, int endMonth, int endDay, int endHour, int endMinute, String name, int score) {
         this.startMonth = startMonth;
