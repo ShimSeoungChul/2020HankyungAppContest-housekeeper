@@ -8,29 +8,29 @@
     tools:context=".WorkAddActivity"
     android:weightSum="22">
 
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#3849FF"
 
+    >
     <TextView
-        android:id="@+id/textView16"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="20dp"
-        android:layout_weight="2"
-        android:fontFamily="@font/title"
-        android:text=" 28 May"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="24dp" />
-
+        android:layout_height="wrap_content"
+        android:text="일정 등록"
+        android:textSize="20dp"
+        android:textStyle= "bold"
+        android:layout_centerInParent="true"
+        android:textColor="#ffffff"/>
+</RelativeLayout>
     <TextView
         android:id="@+id/textView6"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginVertical="5dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_weight="1"
-        android:fontFamily="@font/title"
+
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
         android:text="시작 시간"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="18dp" />
@@ -58,7 +58,6 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_weight="3"
-            android:fontFamily="@font/defaulttext"
             android:background="#CADCF0"
             android:text="시작 시간 입력" />
     </LinearLayout>
@@ -70,8 +69,8 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_weight="1"
-        android:fontFamily="@font/title"
         android:text="종료 시간"
+        android:textStyle="bold"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="18dp" />
 
@@ -98,7 +97,6 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_weight="3"
-            android:fontFamily="@font/defaulttext"
             android:background="#CADCF0"
             android:text="종료 시간 입력" />
     </LinearLayout>
@@ -110,8 +108,9 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_weight="1"
-        android:fontFamily="@font/title"
+        android:textStyle="bold"
         android:text="난이도"
+
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="18dp" />
 
@@ -166,7 +165,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_weight="1"
-        android:fontFamily="@font/title"
+        android:textStyle="bold"
         android:text="리워드"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="18dp" />
@@ -193,7 +192,6 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_weight="3"
-            android:fontFamily="@font/title"
             android:text="원"
             android:textSize="15dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
@@ -209,13 +207,14 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="3"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
         android:onClick="workAdd"
+        android:layout_gravity="center"
+        android:textStyle="bold"
         android:textColor="#FFFFFF"
-        android:fontFamily="@font/defaulttext"
         android:textSize="20dp"
-        android:background="#2D64EC"
+        android:shadowRadius="20dp"
+        android:background="#50EBFF"
         android:text="등 록" />
 </LinearLayout>

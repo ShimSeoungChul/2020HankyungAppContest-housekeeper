@@ -6,42 +6,41 @@
     android:layout_height="match_parent"
     android:gravity="left"
     android:orientation="vertical"
-    android:weightSum="18"
     tools:context=".WorkEndActivity">
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="20dp"
-        android:layout_weight="2"
-        android:fontFamily="@font/title"
-        android:text="작업 완료"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="24dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#3849FF"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일정 종료"
+            android:textSize="20dp"
+            android:textStyle= "bold"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginVertical="5dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_weight="1"
-        android:fontFamily="@font/title"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
         android:text="작업 만족도"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="18dp" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
         android:layout_marginBottom="30dp"
-        android:layout_weight="2"
-        android:orientation="horizontal"
-        android:weightSum="10">
+
+        android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/imageView3"
@@ -88,22 +87,18 @@
     <TextView
         android:id="@+id/textView11"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginVertical="5dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:layout_weight="1"
-        android:fontFamily="@font/title"
         android:text="사용자별 작업 비율"
+        android:textStyle="bold"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="18dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
-        android:orientation="horizontal"
-        android:weightSum="10">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/textView12"
@@ -132,10 +127,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
-        android:orientation="horizontal"
-        android:weightSum="10">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/textView13"
@@ -162,24 +155,30 @@
             android:text="%" />
     </LinearLayout>
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="6">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true" >
 
-    </FrameLayout>
 
     <Button
         android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
-        android:onClick="workEnd"
-        android:text="완료"
+        android:layout_marginTop="30dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="#50EBFF"
+        android:shadowRadius="20dp"
+        android:text="등 록"
+        android:layout_margin="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+
+
+
         android:textColor="#FFFFFF"
-        android:fontFamily="@font/defaulttext"
         android:textSize="20dp"
-        android:background="#2D64EC"/>
+        android:textStyle="bold" />
+</RelativeLayout>
 
 
 </LinearLayout>
