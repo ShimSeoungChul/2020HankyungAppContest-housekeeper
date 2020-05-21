@@ -2,7 +2,7 @@ package com.scshim.hoursetime;
 
 
 /*
-개발자 심승철, 임슬아
+개발 심승철, 임슬아
  */
 
 /*
@@ -29,11 +29,11 @@ public class MainActivity extends AppCompatActivity {
 
     void goToworkAdd(View view){
         Intent intent = new Intent(getApplicationContext(),WorkAddActivity.class);
-        startActivity(intent);//액티비티 띄우기
+        startActivity(intent);//액티비티 생성
     }
 
     void goTodataAnalysis(View view){
         Intent intent = new Intent(getApplicationContext(),DataAnalysisActivity.class);
-        startActivity(intent);//액티비티 띄우기
+        startActivity(intent);//액티비티 생성
     }
 }
