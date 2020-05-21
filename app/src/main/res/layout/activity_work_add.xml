@@ -19,6 +19,7 @@
         android:layout_weight="2"
         android:fontFamily="@font/title"
         android:text=" 28 May"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="24dp" />
 
     <TextView
@@ -28,10 +29,11 @@
         android:layout_marginVertical="5dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:textSize="18dp"
         android:layout_weight="1"
         android:fontFamily="@font/title"
-        android:text="시작 시간" />
+        android:text="시작 시간"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -57,6 +59,7 @@
             android:layout_marginLeft="10dp"
             android:layout_weight="3"
             android:fontFamily="@font/defaulttext"
+            android:background="#CADCF0"
             android:text="시작 시간 입력" />
     </LinearLayout>
 
@@ -69,6 +72,7 @@
         android:layout_weight="1"
         android:fontFamily="@font/title"
         android:text="종료 시간"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="18dp" />
 
     <LinearLayout
@@ -95,6 +99,7 @@
             android:layout_marginLeft="10dp"
             android:layout_weight="3"
             android:fontFamily="@font/defaulttext"
+            android:background="#CADCF0"
             android:text="종료 시간 입력" />
     </LinearLayout>
 
@@ -107,8 +112,8 @@
         android:layout_weight="1"
         android:fontFamily="@font/title"
         android:text="난이도"
-        android:textSize="18dp"
-        />
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -163,6 +168,7 @@
         android:layout_weight="1"
         android:fontFamily="@font/title"
         android:text="리워드"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="18dp" />
 
     <LinearLayout
@@ -187,8 +193,10 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_weight="3"
-            android:fontFamily="@font/defaulttext"
-            android:text="원" />
+            android:fontFamily="@font/title"
+            android:text="원"
+            android:textSize="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
     </LinearLayout>
 
 
@@ -205,5 +213,9 @@
         android:layout_height="0dp"
         android:layout_weight="3"
         android:onClick="workAdd"
-        android:text="등록" />
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/defaulttext"
+        android:textSize="20dp"
+        android:background="#2D64EC"
+        android:text="등 록" />
 </LinearLayout>
