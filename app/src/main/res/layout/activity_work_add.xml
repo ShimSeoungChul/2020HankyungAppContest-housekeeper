@@ -23,6 +23,7 @@
         android:layout_centerInParent="true"
         android:textColor="#ffffff"/>
 </RelativeLayout>
+
     <TextView
         android:id="@+id/textView6"
         android:layout_width="match_parent"
@@ -30,10 +31,39 @@
         android:layout_marginLeft="10dp"
 
         android:layout_marginTop="30dp"
-        android:textStyle="bold"
+        android:text="일정"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/textView27"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:hint="예) 빨래" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginTop="30dp"
         android:text="시작 시간"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="18dp" />
+        android:textSize="18dp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -173,17 +203,24 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
-        android:orientation="horizontal"
         android:layout_marginBottom="10dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
         android:weightSum="10">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="현금" />
 
         <EditText
             android:id="@+id/textView14"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
             android:layout_marginLeft="10dp"
+            android:layout_weight="3"
             android:hint="예) 10000" />
 
         <TextView
@@ -193,10 +230,27 @@
             android:layout_marginLeft="10dp"
             android:layout_weight="3"
             android:text="원"
-            android:textSize="15dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="15dp" />
+
     </LinearLayout>
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="기프티콘" />
+    </LinearLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -214,7 +268,6 @@
         android:textStyle="bold"
         android:textColor="#FFFFFF"
         android:textSize="20dp"
-        android:shadowRadius="20dp"
         android:background="#50EBFF"
         android:text="등 록" />
 </LinearLayout>
