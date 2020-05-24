@@ -23,6 +23,8 @@ import com.scshim.hoursetime.domain.Work;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.xml.transform.Result;
+
 public class MainActivity extends AppCompatActivity {
 
     ImageButton calendarBtn;
@@ -48,6 +50,11 @@ public class MainActivity extends AppCompatActivity {
 
     void goTodataAnalysis(View view){
         Intent intent = new Intent(getApplicationContext(),DataAnalysisActivity.class);
+        startActivity(intent);//액티비티 생성
+    }
+
+    void goToReward(View view){
+        Intent intent = new Intent(getApplicationContext(), ResultActivity.class);
         startActivity(intent);//액티비티 생성
     }
 }
