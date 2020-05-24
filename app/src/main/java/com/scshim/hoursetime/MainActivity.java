@@ -18,11 +18,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-import com.scshim.hoursetime.domain.Work;
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class MainActivity extends AppCompatActivity {
 
     ImageButton calendarBtn;
@@ -34,22 +29,26 @@ public class MainActivity extends AppCompatActivity {
 
         calendarBtn = findViewById(R.id.btnToCalendar);
 
+    }
 
-//        Intent calendarIntent = new Intent(getApplicationContext(), CalendarActivity.class);
-//        startActivity(calendarIntent);
-
-
-
-
+    @Override
+    protected void onResume() {
+        super.onResume();
 
     }
 
-    void goToworkAdd(View view){
+
+    public void goToCalendar(View view){
+        Intent intent = new Intent(getApplicationContext(),CalendarActivity.class);
+        startActivity(intent);//액티비티 생성
+    }
+
+    public void goToworkAdd(View view){
         Intent intent = new Intent(getApplicationContext(),WorkAddActivity.class);
         startActivity(intent);//액티비티 생성
     }
 
-    void goTodataAnalysis(View view){
+    public void goTodataAnalysis(View view){
         Intent intent = new Intent(getApplicationContext(),DataAnalysisActivity.class);
         startActivity(intent);//액티비티 생성
     }

@@ -43,7 +43,7 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/textView27"
+            android:id="@+id/workEt"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -74,35 +74,35 @@
         android:weightSum="10">
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/scoreImg1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:srcCompat="@drawable/difficulty_color" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/scoreImg2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:srcCompat="@drawable/difficulty_black" />
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/scoreImg3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:srcCompat="@drawable/difficulty_black" />
 
         <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/scoreImg4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:srcCompat="@drawable/difficulty_black" />
 
         <ImageView
-            android:id="@+id/imageView7"
+            android:id="@+id/scoreImg5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"

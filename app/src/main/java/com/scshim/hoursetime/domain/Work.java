@@ -1,28 +1,28 @@
 package com.scshim.hoursetime.domain;
 
-import java.util.List;
+
+import lombok.Getter;
+import lombok.Setter;
 
 /* 작업 정보 테이블 */
+@Getter
+@Setter
 public class Work {
     //작업 번호
-    int id;
-
+    private int id;
     //작업할 날짜
-    int month;
-    int day;
-
+    private int month;
+    private int day;
     //작업명
-    String name;
+    private String name;
     //작업점수
-    int score;
-
+    private int score;
     //작업 완료 여부
-    boolean success = false;
+    private boolean success = false;
     //작업자 이름
-    String worker명 = "";
+    private String worker = "";
     //작업 만족도. 1부터 5까지로 선택하며, 선 값을 화면에 별모양으로 표기한다.
-    int start = 0;
-
+    private int start = 0;
     public Work(String name, int score, int month, int day) {
         this.name = name;
         this.score = score;

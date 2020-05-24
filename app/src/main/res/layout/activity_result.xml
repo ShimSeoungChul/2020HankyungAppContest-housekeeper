@@ -12,9 +12,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="#3849FF"
-
-        >
+        android:background="#3849FF">
 
         <TextView
             android:layout_width="wrap_content"
@@ -101,7 +99,7 @@
         android:layout_weight="13">
 
         <LinearLayout
-            android:id="@+id/linearLayout2"
+            android:id="@+id/scoreBarLayout1"
             android:layout_width="40dp"
             android:layout_height="350dp"
             android:layout_marginStart="20dp"
@@ -113,7 +111,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/linearLayout"
+            android:id="@+id/scoreBarLayout2"
             android:layout_width="40dp"
             android:layout_height="300dp"
             android:layout_marginEnd="20dp"
@@ -153,9 +151,9 @@
             android:text="250p"
             android:textStyle="bold"
             android:textSize="15dp"
-            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
-            app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
-            app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+            app:layout_constraintBottom_toTopOf="@+id/scoreBarLayout1"
+            app:layout_constraintEnd_toEndOf="@+id/scoreBarLayout1"
+            app:layout_constraintStart_toStartOf="@+id/scoreBarLayout1"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.528" />
 
@@ -167,8 +165,8 @@
             android:textStyle="bold"
             android:textSize="15dp"
             app:layout_constraintBottom_toBottomOf="@+id/textView8"
-            app:layout_constraintEnd_toEndOf="@+id/linearLayout"
-            app:layout_constraintStart_toStartOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="@+id/scoreBarLayout2"
+            app:layout_constraintStart_toStartOf="@+id/scoreBarLayout2"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />
     </android.support.constraint.ConstraintLayout>
