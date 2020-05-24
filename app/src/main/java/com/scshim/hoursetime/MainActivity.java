@@ -20,6 +20,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.scshim.hoursetime.adaptor.ScheduleListAdapter;
+
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
     private ImageButton calendarBtn;
 
@@ -29,6 +33,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         calendarBtn = findViewById(R.id.btnToCalendar);
 
+        // 리사이클러뷰에 LinearLayoutManager 객체 지정.
+        RecyclerView recyclerView = findViewById(R.id.schedulLV) ;
+        recyclerView.setLayoutManager(new LinearLayoutManager(this)) ;
+
+        // 리사이클러뷰에 SimpleTextAdapter 객체 지정.
+        ScheduleListAdapter adapter = new ScheduleListAdapter(Database.minwoo) ;
+        recyclerView.setAdapter(adapter) ;
     }
 
     @Override
@@ -53,4 +64,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(),DataAnalysisActivity.class);
         startActivity(intent);//액티비티 생성
     }
+
+    void goToReward(View view){
+        Intent intent = new Intent(getApplicationContext(), ResultActivity.class);
+        startActivity(intent);//액티비티 생성
+    }
+
 }

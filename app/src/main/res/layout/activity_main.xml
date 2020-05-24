@@ -52,7 +52,6 @@
 
     </LinearLayout>
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -103,6 +102,11 @@
 
         </LinearLayout>
 
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/schedulLV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -112,7 +116,7 @@
         android:background="#FDF6F6"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
-        android:weightSum="3">
+        android:weightSum="4">
 
         <ImageButton
             android:id="@+id/btnTohousekeeper"
@@ -139,6 +143,14 @@
             android:background="#FDF6F6"
             android:onClick="goTodataAnalysis"
             android:src="@drawable/graph2"/>
+        <ImageButton
+            android:id="@+id/btnToReward"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="#FDF6F6"
+            android:onClick="goToReward"
+            android:src="@drawable/reward"/>
     </LinearLayout>
 
 </RelativeLayout>

@@ -7,11 +7,11 @@ import java.util.List;
 
 public class Database {
 
-    static String userName = "지현";
+    public static String userName = "지현";
 
-    static List<Work> minwoo;
-    static List<Work> jihyun;
-    static List<Work> remainingWork;
+    public static List<Work> minwoo;
+    public static List<Work> jihyun;
+    public static List<Work> remainingWork;
 
     void Database(){
         minwoo = new ArrayList<>();
