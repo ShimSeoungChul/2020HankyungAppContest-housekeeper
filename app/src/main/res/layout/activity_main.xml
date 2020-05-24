@@ -1,110 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#fff"
     tools:context="com.scshim.hoursetime.MainActivity">
 
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:textSize="25sp"
-        android:text="Schedule" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="파트너보다 육아점수가 낮아요." />
-
-    <android.support.v7.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2" />
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:weightSum="5"
-        android:orientation="horizontal">
+        android:layout_height="200dp"
+        android:id="@+id/header"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textSize="20sp"
-            android:text="Taday" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textSize="20sp"
-            android:text="Week" />
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Month"
-            android:textSize="20sp" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="0dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="업무추가테스트용"
-            android:onClick="goToworkAdd"/>
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/woman"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="안녕하세요, 손지현님!"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center"
+                android:textSize="15dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="민수님보다 육아 점수가 50% 낮아요! \n
+좀 더 분발해 보세요!"
+            android:textSize="18dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_margin="30dp"/>
+
+
     </LinearLayout>
 
-    <android.support.v7.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="3" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="오늘"
+                android:textColor="@color/category"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="23dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/underline"
+                />
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="주간"
+                android:layout_margin="15dp"
+            android:layout_weight="1"
+                android:gravity="center"
+            android:textColor="@color/category"
+            android:textStyle="bold"
+            android:textSize="23dp"
+            android:background="@drawable/underline"
+            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="월간"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/category"
+                android:textStyle="bold"
+                android:textSize="23dp"
+                android:background="@drawable/underline"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:gravity="center"
+        android:background="#FDF6F6"
+        android:layout_alignParentBottom="true"
         android:orientation="horizontal"
-        android:weightSum="5">
+        android:weightSum="3">
 
         <ImageButton
             android:id="@+id/btnTohousekeeper"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_weight="1"
-            android:background="#00000000"
-            app:srcCompat="@drawable/ic_housekeeper" />
+            android:background="#FDF6F6"
+
+            app:srcCompat="@drawable/housekeeper" />
 
         <ImageButton
             android:id="@+id/btnToCalendar"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="35dp"
+            android:background="#FDF6F6"
+            android:layout_height="35dp"
             android:layout_weight="1"
-            android:background="#00000000"
             android:onClick="goToCalendar"
-            app:srcCompat="@drawable/ic_calendar" />
-
+            app:srcCompat="@drawable/icon2" />
         <ImageButton
             android:id="@+id/btnTodataAnalysis"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_weight="1"
+            android:background="#FDF6F6"
             android:onClick="goTodataAnalysis"
-            app:srcCompat="@drawable/ic_dataanalysis" />
+            android:src="@drawable/graph2"/>
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>

@@ -15,18 +15,18 @@ package com.scshim.hoursetime;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
-
-    ImageButton calendarBtn;
+    private ImageButton calendarBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         calendarBtn = findViewById(R.id.btnToCalendar);
 
     }
@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
     public void goToCalendar(View view){
         Intent intent = new Intent(getApplicationContext(),CalendarActivity.class);
         startActivity(intent);//액티비티 생성
+
     }
 
     public void goToworkAdd(View view){
