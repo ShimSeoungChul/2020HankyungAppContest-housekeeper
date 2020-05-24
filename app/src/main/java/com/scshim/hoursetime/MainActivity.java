@@ -18,6 +18,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.scshim.hoursetime.domain.Work;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
 
     ImageButton calendarBtn;
@@ -28,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         calendarBtn = findViewById(R.id.btnToCalendar);
+
 
 //        Intent calendarIntent = new Intent(getApplicationContext(), CalendarActivity.class);
 //        startActivity(calendarIntent);
