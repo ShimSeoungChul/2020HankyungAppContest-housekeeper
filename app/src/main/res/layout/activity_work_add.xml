@@ -12,7 +12,6 @@
     android:layout_width="match_parent"
     android:layout_height="60dp"
     android:background="#3849FF"
-
     >
     <TextView
         android:layout_width="wrap_content"
@@ -54,95 +53,17 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView16"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-
-        android:layout_marginTop="30dp"
-        android:text="시작 시간"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="18dp"
-        android:textStyle="bold" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="3"
-        android:gravity="left|center_vertical"
-        android:orientation="horizontal"
-        android:layout_marginBottom="10dp"
-        android:weightSum="10">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:layout_margin="10dp"
-            app:srcCompat="@drawable/start" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_weight="3"
-            android:background="#CADCF0"
-            android:text="시작 시간 입력" />
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_weight="1"
-        android:text="종료 시간"
-        android:textStyle="bold"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="18dp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="3"
-        android:gravity="left|center_vertical"
-        android:orientation="horizontal"
-        android:layout_marginBottom="10dp"
-        android:weightSum="10">
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:layout_margin="10dp"
-            app:srcCompat="@drawable/finish" />
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_weight="3"
-            android:background="#CADCF0"
-            android:text="종료 시간 입력" />
-    </LinearLayout>
-
-    <TextView
         android:id="@+id/textView10"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_weight="1"
-        android:textStyle="bold"
-        android:text="난이도"
-
+        android:text="획득 점수"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="18dp" />
+
+        android:textSize="18dp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -188,69 +109,6 @@
             app:srcCompat="@drawable/difficulty_black" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_weight="1"
-        android:textStyle="bold"
-        android:text="리워드"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="18dp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginBottom="10dp"
-        android:layout_weight="2"
-        android:orientation="horizontal"
-        android:weightSum="10">
-
-        <RadioButton
-            android:id="@+id/radioButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:text="현금" />
-
-        <EditText
-            android:id="@+id/textView14"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_weight="3"
-            android:hint="예) 10000" />
-
-        <TextView
-            android:id="@+id/textView15"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_weight="3"
-            android:text="원"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:textSize="15dp" />
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginBottom="10dp"
-        android:layout_weight="2"
-        android:orientation="horizontal"
-        android:weightSum="10">
-
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:text="기프티콘" />
-    </LinearLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
