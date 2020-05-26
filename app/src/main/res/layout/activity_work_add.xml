@@ -71,42 +71,43 @@
         android:layout_weight="3"
         android:orientation="horizontal"
         android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
         android:weightSum="10">
 
-        <ImageView
+        <ImageButton
             android:id="@+id/scoreImg1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/difficulty_color" />
+            android:background="@drawable/difficulty_color" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/scoreImg2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/difficulty_black" />
+            android:background="@drawable/difficulty_black" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/scoreImg3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/difficulty_black" />
+            android:background="@drawable/difficulty_black" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/scoreImg4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/difficulty_black" />
+            android:background="@drawable/difficulty_black" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/scoreImg5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/difficulty_black" />
+            android:background="@drawable/difficulty_black" />
     </LinearLayout>
 
 

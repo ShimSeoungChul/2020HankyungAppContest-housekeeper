@@ -57,55 +57,33 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/header"
         android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="3"
-            android:orientation="horizontal">
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="50dp"
-                android:text="오늘"
-                android:textColor="@color/category"
-                android:textStyle="bold"
+                android:layout_margin="15dp"
                 android:layout_weight="1"
-                android:gravity="center"
-                android:textSize="23dp"
-                android:layout_margin="15dp"
                 android:background="@drawable/underline"
-                />
-            <TextView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="주간"
-                android:layout_margin="15dp"
-            android:layout_weight="1"
                 android:gravity="center"
-            android:textColor="@color/category"
-            android:textStyle="bold"
-            android:textSize="23dp"
-            android:background="@drawable/underline"
-            />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:text="월간"
-                android:layout_margin="15dp"
-                android:gravity="center"
-                android:layout_weight="1"
+                android:text="전체"
                 android:textColor="@color/category"
-                android:textStyle="bold"
                 android:textSize="23dp"
-                android:background="@drawable/underline"
-                />
+                android:textStyle="bold" />
 
         </LinearLayout>
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/schedulLV"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"/>
 
     </LinearLayout>
 
@@ -124,7 +102,7 @@
             android:layout_height="35dp"
             android:layout_weight="1"
             android:background="#FDF6F6"
-
+            android:onClick="goToHousekeeper"
             app:srcCompat="@drawable/housekeeper" />
 
         <ImageButton

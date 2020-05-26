@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.scshim.hoursetime.R;
 import com.scshim.hoursetime.ResultActivity;
+import com.scshim.hoursetime.WorkEndActivity;
 import com.scshim.hoursetime.domain.Work;
 
 import java.util.ArrayList;
@@ -59,27 +60,36 @@ public class ScheduleListAdapter extends RecyclerView.Adapter<ScheduleListAdapte
     // onBindViewHolder() - position에 해당하는 데이터를 뷰홀더의 아이템뷰에 표시.
     @Override
     public void onBindViewHolder(ScheduleListAdapter.ViewHolder holder, int position) {
-        String name = mData.get(position).getName();
-        int point = mData.get(position).getScore();
+        final String work = mData.get(position).getName();
+        final int point = mData.get(position).getScore();
+        final int month = mData.get(position).getMonth();
+        final int day = mData.get(position).getDay();
+        final int index = position;
 
-        if(name.equals("빨래")){
+
+        if(work.equals("빨래")){
             holder.workListIV.setImageResource(R.drawable.wash);
-        }else if(name.equals("육아")){
+        }else if(work.equals("육아")){
             holder.workListIV.setImageResource(R.drawable.baby);
-        }else if(name.equals("청소")){
+        }else if(work.equals("청소")){
             holder.workListIV.setImageResource(R.drawable.clean);
-        }else if(name.equals("설거지")){
+        }else if(work.equals("설거지")){
             holder.workListIV.setImageResource(R.drawable.washingdishes);
         }else{
             holder.workListIV.setImageResource(R.drawable.house);
         }
-        String text = name+ "(" + Integer.toString(point) +"점)";
+        String text = "<"+Integer.toString(month)+"월 "+Integer.toString(day)+"일> "+work+ "(" + Integer.toString(point) +"점)";
         holder.workListTV.setText(text);
 
         holder.workDetailTV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, ResultActivity.class);
+                Intent intent = new Intent(context, WorkEndActivity.class);
+                intent.putExtra("month",month);
+                intent.putExtra("day",day);
+                intent.putExtra("work",work);
+                intent.putExtra("point",point);
+                intent.putExtra("index",index);
                 context.startActivity(intent);//액티비티 생성
             }
         });

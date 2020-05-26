@@ -26,6 +26,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private ImageButton calendarBtn;
+    ScheduleListAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,19 +34,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         calendarBtn = findViewById(R.id.btnToCalendar);
 
+        Database.init();
+
         // 리사이클러뷰에 LinearLayoutManager 객체 지정.
         RecyclerView recyclerView = findViewById(R.id.schedulLV) ;
         recyclerView.setLayoutManager(new LinearLayoutManager(this)) ;
 
         // 리사이클러뷰에 SimpleTextAdapter 객체 지정.
-        ScheduleListAdapter adapter = new ScheduleListAdapter(Database.minwoo) ;
+        adapter = new ScheduleListAdapter(Database.remainingWork);
         recyclerView.setAdapter(adapter) ;
     }
 
     @Override
-    protected void onResume() {
-        super.onResume();
-
+    protected void onRestart() {
+        super.onRestart();
+        adapter.notifyDataSetChanged();
     }
 
 
@@ -55,19 +58,18 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void goToworkAdd(View view){
-        Intent intent = new Intent(getApplicationContext(),WorkAddActivity.class);
-        startActivity(intent);//액티비티 생성
-    }
-
     public void goTodataAnalysis(View view){
         Intent intent = new Intent(getApplicationContext(),DataAnalysisActivity.class);
         startActivity(intent);//액티비티 생성
     }
 
-    void goToReward(View view){
+    public void goToReward(View view){
         Intent intent = new Intent(getApplicationContext(), ResultActivity.class);
         startActivity(intent);//액티비티 생성
     }
 
+    public void goToHousekeeper(View view){
+        Intent intent = new Intent(getApplicationContext(), HousekeeperActivity.class);
+        startActivity(intent);//액티비티 생성
+    }
 }

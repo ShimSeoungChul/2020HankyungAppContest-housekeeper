@@ -145,7 +145,7 @@
             app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/scoreText1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="250p"
@@ -158,13 +158,13 @@
             app:layout_constraintVertical_bias="0.528" />
 
         <TextView
-            android:id="@+id/textView19"
+            android:id="@+id/scoreText2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="200p"
             android:textStyle="bold"
             android:textSize="15dp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView8"
+            app:layout_constraintBottom_toBottomOf="@+id/scoreText1"
             app:layout_constraintEnd_toEndOf="@+id/scoreBarLayout2"
             app:layout_constraintStart_toStartOf="@+id/scoreBarLayout2"
             app:layout_constraintTop_toTopOf="parent"

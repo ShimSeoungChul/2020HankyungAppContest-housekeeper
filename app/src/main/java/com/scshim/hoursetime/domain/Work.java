@@ -22,7 +22,7 @@ public class Work {
     //작업자 이름
     private String worker = "";
     //작업 만족도. 1부터 5까지로 선택하며, 선 값을 화면에 별모양으로 표기한다.
-    private int start = 0;
+    private int satisfaction = 0;
     public Work(String name, int score, int month, int day) {
         this.name = name;
         this.score = score;

@@ -15,13 +15,13 @@ public class StartActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
 
-//        toMainBtn = findViewById(R.id.toMainBtn);
-//        toMainBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-//                startActivity(intent);//액티비티 생성
-//            }
-//        });
+        toMainBtn = findViewById(R.id.toMainBtn);
+        toMainBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(intent);//액티비티 생성
+            }
+        });
     }
 }
