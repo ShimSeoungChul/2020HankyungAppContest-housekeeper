@@ -19,4 +19,4 @@
 <img width="1074" alt="reward" src="https://user-images.githubusercontent.com/40673012/107148415-3f1fed80-6996-11eb-8bd4-10d65ef85622.png">
 
 # Team Members.
-<img width="797" alt="team_members" src="https://user-images.githubusercontent.com/40673012/107148418-41824780-6996-11eb-8979-efc374d8fd66.png">
+<img width="1028" alt="team_members" src="https://user-images.githubusercontent.com/40673012/107161549-bbd7b980-69e0-11eb-87a4-5fdec85485a5.png">
